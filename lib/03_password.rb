@@ -5,6 +5,12 @@ mdp = gets.chomp
 	return mdp
 end
 
+
+def welcome_screen
+		puts "Succesful connetion!"
+		puts "NSA secret : Trump is a hologram"
+end
+
 def login(mdp2)
 u = 1
 
@@ -13,8 +19,9 @@ u = 1
 	print">"
 test = gets.chomp
 	if test == mdp2
-		puts "Succesful connection!"
-		puts "NSA secret : Trump is a hologram"
+		welcome_screen
+	#	puts "Succesful connection!"
+	#	puts "NSA secret : Trump is a hologram"
 		u = 0
 	else
 		puts "Wrong password, try again"
